@@ -1,0 +1,61 @@
+## Adapted from NLTK
+##
+## Minimal feature-based grammar to illustrate the interpretation of
+## determiner phrases.
+## 
+## Author: Ewan Klein <ewan@inf.ed.ac.uk> 
+## URL: <http://nltk.sourceforge.net>
+## For license information, see LICENSE.TXT
+## Revised by Gina-Anne Levow
+
+% start S
+
+S[SEM = <?subj(?vp)>] -> NP[SEM = ?subj, NUM = ?s] VP[SEM = ?vp, NUM = ?s]
+S[SEM = <?subj(?vp)>] -> NP[SEM = ?subj, NUM = ?s] VP_3_NEG[SEM = ?vp, NUM = ?s]
+S[SEM = <?subj(?vp)>] -> NP[SEM = ?subj, NUM = ?s] VP_SUM[SEM = ?vp, NUM = ?s]
+VP[SEM = ?v, NUM = ?s] -> IV[SEM = ?v, NUM = ?s]
+VP[SEM = <?v(?np)>, NUM = ?s] -> TV[SEM = ?v, NUM = ?s] NP[SEM = ?np]
+NP[SEM = <?det(?n)>, NUM = ?s] -> Det[SEM = ?det, NUM = ?s] N[SEM = ?n, NUM = ?s]
+NP[SEM = <?det(?n)>, NUM = ?s] -> Det[SEM = ?det, NUM = ?s] N_SUM[SEM = ?n, NUM = ?s]
+NP[SEM = <?n>, NUM = ?s] -> NNP[SEM = ?n, NUM = ?s]
+NP[SEM = <?n>, NUM = ?s] -> NNP_SUM[SEM = ?n, NUM = ?s]
+
+Det[SEM = <\Q P.exists x.(Q(x) & P(x))>, NUM = sg] -> 'a' | 'an'
+Det[SEM = <\Q P.all x.(Q(x) -> P(x))>, NUM = sg] -> 'every'
+Det[SEM = <\Q P.all x.(Q(x) -> P(x))>, NUM = pl] -> 'all'
+Det[SEM = <\Q P.-exists x.(Q(x) & P(x))>, NUM = sg] -> 'no'
+
+NNP[SEM = <\X.X(John)>, NUM = sg] -> 'John'
+NNP[SEM = <\X.X(Jack)>, NUM = sg] -> 'Jack'
+NNP[SEM = <\X.X(Mary)>, NUM = sg] -> 'Mary'
+N[SEM = <\x.Student(x)>, NUM = sg] -> 'student'
+N[SEM = <\x.Student(x)>, NUM = pl] -> 'students'
+N[SEM = <\x.Sandwich(x)>, NUM = sg] -> 'sandwich'
+N[SEM = <\x.Soda(x)>, NUM = sg] -> 'soda'
+N[SEM = <\x.Bagel(x)>, NUM = sg] -> 'bagel'
+N[SEM = <\x.Essay(x)>, NUM = sg] -> 'essay'
+N[SEM = <\x.Person(x)>, NUM = sg] -> 'person'
+NNP[SEM = <\Q.-exists x.(Q(x))>, NUM = sg] -> 'nobody'
+
+IV[SEM = <\x.exists e.(Eat(e) & Eater(e,x))>, NUM = sg] -> 'eats'
+IV[SEM = <\x.exists e.(Eat(e) & Eater(e,x))>, NUM = pl] -> 'eat'
+IV[SEM = <\x.exists e.(Drink(e) & Drinker(e,x))>, NUM = pl] -> 'drink'
+
+TV[SEM = <\P \y.P(\x. exists e.(Drink(e) & Drinker(e,y) & DrinkThing(e,x)))>, NUM = sg] -> 'drinks'
+TV[SEM = <\P \y.P(\x. exists e.(Eat(e) & Eater(e,y) & EatThing(e,x)))>, NUM = sg] -> 'eats'
+TV[SEM = <\P \y.P(\x. exists e.(Write(e) & Writer(e,y) & WriteThing(e,x)))>, NUM = sg] -> 'writes'
+
+CONJ[SEM = <\Q P.(\x (P(x) | Q(x)))>] -> 'or'
+CONJ_VP[SEM = <?conj(?v)>] -> CONJ[SEM = ?conj] VP[SEM = ?v]
+VP_SUM[SEM = <?v2(?v1)>, NUM = ?n] -> VP[SEM = ?v1, NUM = ?n] CONJ_VP[SEM = ?v2, NUM = ?n]
+
+CONJ_N[SEM = <?conj(?n)>, NUM = ?s] -> CONJ[SEM = ?conj] N[SEM = ?n, NUM = ?s]
+N_SUM[SEM = <?n2(?n1)>, NUM = ?s] -> N[SEM = ?n1, NUM = ?s] CONJ_N[SEM = ?n2, NUM = ?s]
+
+CONJ_NNP[SEM = <?conj(?n)>, NUM = ?s] -> CONJ[SEM = ?conj] NNP[SEM = ?n, NUM = ?s]
+NNP_SUM[SEM = <?n2(?n1)>, NUM = ?s] -> NNP[SEM = ?n1, NUM = ?s] CONJ_NNP[SEM = ?n2, NUM = ?s]
+
+NEG[SEM=<\Q.(\x -Q(x))>] -> 'not'
+AUX -> 'does'
+VP_3_NEG[SEM = <?not(?v)>, NUM = sg] -> AUX NEG[SEM = ?not] VP[SEM = ?v, NUM = pl]
+VP_3_NEG[SEM = <?not(?v)>, NUM = sg] -> AUX NEG[SEM = ?not] VP_SUM[SEM = ?v, NUM = pl]
