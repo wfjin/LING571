@@ -1,0 +1,76 @@
+car: the:144 a:62 in:30 and:27 his:25 of:23 was:19 with:18 to:16 by:11 
+automobile: the:22 of:13 and:8 in:7 an:5 to:5 state:4 racing:4 as:4 by:4 
+car,automobile:0.774457881197
+journey: the:10 of:5 to:5 a:5 their:4 an:3 his:3 american:3 through:2 her:2 
+voyage: the:9 this:3 a:3 of:2 as:2 second:2 enjoying:2 was:2 third:2 fourth:2 
+journey,voyage:0.64426921761
+boy: the:121 a:78 and:25 was:21 that:17 who:15 had:14 in:13 of:12 his:11 
+lad: a:2 with:2 the:2 making:1 up:1 always:1 quite:1 nearly:1 was:1 toneless:1 
+boy,lad:0.560055822607
+coast: the:49 of:15 west:11 gulf:5 east:5 and:5 to:5 guard:5 on:4 along:3 
+shore: the:41 saxon:12 and:7 by:6 on:6 of:5 occupied:5 a:5 as:5 lake:3 
+coast,shore:0.854547299535
+magician: a:3 and:2 melies:1 was:1 than:1 french:1 to:1 as:1 discovered:1 georges:1 
+wizard: the:3 of:3 a:1 who:1 menlo:1 fashioned:1 is:1 
+magician,wizard:0.127688479614
+midday: the:2 approached:1 searing:1 fifth:1 sun:1 of:1 at:1 still:1 past:1 one:1 
+noon: and:10 at:10 to:6 by:3 midnight:3 was:3 there:2 high:2 little:2 noon:2 
+midday,noon:0.20886945333
+furnace: the:8 a:5 in:3 fuel:2 and:2 your:2 buy:1 running:1 high:1 them:1 
+stove: the:10 and:5 a:4 on:3 in:3 by:2 to:2 wealthy:1 an:1 republican:1 
+furnace,stove:0.767906628231
+food: the:38 and:30 of:24 for:23 in:16 that:8 a:8 was:8 is:8 with:6 
+fruit: of:10 the:9 and:9 in:4 a:4 with:3 first:2 is:2 fresh:2 its:2 
+food,fruit:0.76332584233
+bird: and:10 the:9 a:7 of:4 or:3 an:2 grand:2 like:2 dylan:2 it:2 
+crane: hart:2 and:1 w.:1 enrage:1 letting:1 medical:1 little:1 poet:1 of:1 rourke:1 
+bird,crane:0.273731946382
+tool: the:16 a:10 for:4 and:4 in:4 to:4 of:3 machine:3 hand:2 was:2 
+implement: to:4 division:1 distinctive:1 foreign:1 begin:1 the:1 i.e.:1 position:1 long-range:1 policy:1 
+tool,implement:0.28000896043
+brother: his:27 and:15 her:12 the:9 of:7 my:7 was:6 a:6 that:4 sister:4 
+monk: the:9 a:3 davis:2 then:2 old:2 gillespie:2 savonarola:1 through:1 understood:1 of:1 
+brother,monk:0.333516948388
+crane: hart:2 and:1 w.:1 enrage:1 letting:1 medical:1 little:1 poet:1 of:1 rourke:1 
+implement: to:4 division:1 distinctive:1 foreign:1 begin:1 the:1 i.e.:1 position:1 long-range:1 policy:1 
+crane,implement:0.0422577127364
+lad: a:2 with:2 the:2 making:1 up:1 always:1 quite:1 nearly:1 was:1 toneless:1 
+brother: his:27 and:15 her:12 the:9 of:7 my:7 was:6 a:6 that:4 sister:4 
+lad,brother:0.254335346829
+journey: the:10 of:5 to:5 a:5 their:4 an:3 his:3 american:3 through:2 her:2 
+car: the:144 a:62 in:30 and:27 his:25 of:23 was:19 with:18 to:16 by:11 
+journey,car:0.762476353423
+monk: the:9 a:3 davis:2 then:2 old:2 gillespie:2 savonarola:1 through:1 understood:1 of:1 
+oracle: the:2 oedipus:1 false:1 preordainment:1 speaks:1 over:1 
+monk,oracle:0.524150396115
+food: the:38 and:30 of:24 for:23 in:16 that:8 a:8 was:8 is:8 with:6 
+rooster: a:3 and:1 farm:1 crowed:1 tormented:1 timid:1 
+food,rooster:0.212466736368
+coast: the:49 of:15 west:11 gulf:5 east:5 and:5 to:5 guard:5 on:4 along:3 
+hill: the:48 on:12 of:11 and:11 a:10 to:10 up:8 capitol:7 down:6 in:6 
+coast,hill:0.871242812146
+forest: the:34 national:18 of:15 system:10 a:10 in:10 development:5 or:4 was:4 highway:4 
+graveyard: in:4 the:3 a:2 to:2 and:1 smaller:1 monument:1 church:1 of:1 clings:1 
+forest,graveyard:0.581816698418
+monk: the:9 a:3 davis:2 then:2 old:2 gillespie:2 savonarola:1 through:1 understood:1 of:1 
+slave: the:18 to:8 a:8 of:5 that:3 property:3 was:3 each:2 his:2 and:2 
+monk,slave:0.689671573835
+coast: the:49 of:15 west:11 gulf:5 east:5 and:5 to:5 guard:5 on:4 along:3 
+forest: the:34 national:18 of:15 system:10 a:10 in:10 development:5 or:4 was:4 highway:4 
+coast,forest:0.762547696592
+lad: a:2 with:2 the:2 making:1 up:1 always:1 quite:1 nearly:1 was:1 toneless:1 
+wizard: the:3 of:3 a:1 who:1 menlo:1 fashioned:1 is:1 
+lad,wizard:0.418762843195
+chord: the:4 a:3 struck:2 upon:2 and:1 as:1 first:1 in:1 my:1 final:1 
+smile: a:35 the:10 to:8 her:6 his:6 and:4 at:4 he:3 that:3 on:3 
+chord,smile:0.548750272914
+glass: the:27 of:25 a:24 and:15 in:10 on:7 is:7 to:7 another:4 water:4 
+magician: a:3 and:2 melies:1 was:1 than:1 french:1 to:1 as:1 discovered:1 georges:1 
+glass,magician:0.44406747386
+noon: and:10 at:10 to:6 by:3 midnight:3 was:3 there:2 high:2 little:2 noon:2 
+string: of:9 a:5 and:4 the:3 playing:2 about:2 his:2 with:2 white:1 standpoint:1 
+noon,string:0.271359605622
+rooster: a:3 and:1 farm:1 crowed:1 tormented:1 timid:1 
+voyage: the:9 this:3 a:3 of:2 as:2 second:2 enjoying:2 was:2 third:2 fourth:2 last:1 much:1 an:1 first:1 occurred:1 nearly:1 he:1 did:1 on:1 tragic:1 clear:1 de:1 during:1 brought:1 near-mutiny:1 for:1 his:1 very:1 which:1 i:1 its:1 started:1 only:1 long:1 glorious:1 had:1 exploration:1 et:1 
+rooster,voyage:0.193202455833
+Correlation:0.191227409307
