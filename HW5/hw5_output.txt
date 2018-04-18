@@ -1,0 +1,24 @@
+(S[] (NP[NUM='pl'] (Det[] the) (N[NUM='pl'] dogs)) (VP[NUM='pl', TENSE='pres'] (IV[NUM='pl', TENSE='pres'] bark)) (PUNC[] .))
+(S[] (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] dog)) (VP[NUM='sg', TENSE='pres'] (IV[NUM='sg', TENSE='pres'] barks)) (PUNC[] .))
+
+
+
+(S[] (NP[NUM='pl'] (N[NUM='pl'] dogs)) (VP[NUM='pl', TENSE='pres'] (IV[NUM='pl', TENSE='pres'] bark)) (PUNC[] .))
+
+(S[] (NP[GEND='m', NUM='sg'] (PropN[GEND='m', NUM='sg'] John)) (VP[NUM=?n, TENSE='past'] (CV[TENSE='past'] thought) (COMP[] that) (CS[] (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] book)) (VP[NUM='sg', TENSE='past'] (BV[NUM='sg', TENSE='past'] was) (ADJ[] interesting)))) (PUNC[] .))
+
+
+(S[] (NP[GEND='f', NUM='sg'] (PropN[GEND='f', NUM='sg'] Mary)) (VP[NUM=?n, TENSE='past'] (DV[TENSE='past'] put) (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] book)) (PP1[] (PREP2[] on) (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] shelf)))) (PUNC[] .))
+(S[] (ZV[TENSE='past'] did) (NP[GEND='f', NUM='sg'] (PropN[GEND='f', NUM='sg'] Mary)) (VP[NUM=?n, TENSE='past'] (DV[TENSE='past'] put) (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] book)) (PP1[] (PREP2[] on) (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] shelf)))) (PUNC[] ?))
+
+(S[] (QUES[] what) (ZV[TENSE='past'] did) (NP[GEND='f', NUM='sg'] (PropN[GEND='f', NUM='sg'] Mary)) (DV[TENSE='past'] put) (PP1[] (PREP2[] on) (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] shelf))) (PUNC[] ?))
+
+(S[] (QUES[] what) (ZV[NUM='sg', TENSE='pres'] does) (NP[GEND='m', NUM='sg'] (PropN[GEND='m', NUM='sg'] John)) (VP[NUM='pl', TENSE='pres'] (IV[NUM='pl', TENSE='pres'] know)) (PUNC[] ?))
+(S[] (QUES[] what) (ZV[NUM='sg', TENSE='pres'] does) (NP[GEND='f', NUM='sg'] (PropN[GEND='f', NUM='sg'] Mary)) (VP[NUM='pl', TENSE='pres'] (CV[NUM='pl', TENSE='pres'] think) (CS[] (NP[GEND='m', NUM='sg'] (PropN[GEND='m', NUM='sg'] John)) (VP[NUM='sg', TENSE='pres'] (IV[NUM='sg', TENSE='pres'] knows)))) (PUNC[] ?))
+(S[] (NP[GEND='f', NUM='sg'] (PropN[GEND='f', NUM='sg'] Mary)) (VP[GEND='f', NUM=?n, TENSE='past'] (TV[TENSE='past'] saw) (NP[GEND='f', NUM='sg'] (ProfRef[GEND='f', NUM='sg'] herself))) (PUNC[] .))
+
+(S[] (NP[GEND='m', NUM='sg'] (PropN[GEND='m', NUM='sg'] John)) (VP[GEND='m', NUM=?n, TENSE='past'] (TV[TENSE='past'] saw) (NP[GEND='m', NUM='sg'] (ProfRef[GEND='m', NUM='sg'] himself))) (PUNC[] .))
+(S[] (NP[GEND='m', NUM='sg'] (PropN[GEND='m', NUM='sg'] John)) (VP[NUM=?n, TENSE='past'] (TV[TENSE='past'] reached) (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] summit)) (PP2[] (PREP2[] on) (NDay[] Tuesday))) (PUNC[] .))
+
+(S[] (NP[GEND='m', NUM='sg'] (PropN[GEND='m', NUM='sg'] John)) (VP[NUM=?n, TENSE='past'] (IV[TENSE='past'] walked) (PP2[] (PREP2[] on) (NDay[] Tuesday))) (PUNC[] .))
+(S[] (NP[GEND='f', NUM='sg'] (PropN[GEND='f', NUM='sg'] Mary)) (VP[NUM=?n, TENSE='past'] (IV[TENSE='past'] walked) (PP1[] (PREP1[] for) (NP[NUM='pl'] (Det[NUM='pl'] five) (N[NUM='pl'] minutes)))) (PUNC[] .))

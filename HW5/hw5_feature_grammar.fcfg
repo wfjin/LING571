@@ -1,0 +1,76 @@
+% start S
+
+# S expansion productions
+S -> NP[NUM=?n, GEND=?g] VP[NUM=?n, GEND=?g] PUNC
+S -> QUES ZV[TENSE=?t, NUM=?n] NP[NUM=?n] VP[TENSE=?t, NUM=pl] PUNC
+S -> ZV[TENSE=?t, NUM=?n] NP[NUM=?n] VP[TENSE=?t, NUM=pl] PUNC
+S -> QUES ZV[TENSE=?t, NUM=?n] NP[NUM=?n] DV[TENSE=?t] PP1 PUNC
+
+# complementizer S expansion productions
+CS -> NP[NUM=?n, GEND=?g] VP[NUM=?n, GEND=?g]
+
+# NP expansion productions
+NP[NUM=?n] -> N[NUM=?n]
+NP[NUM=?n, GEND=?g] -> PropN[NUM=?n, GEND=?g] 
+NP[NUM=?n] -> Det[NUM=?n] N[NUM=?n]
+NP[NUM=pl] -> N[NUM=pl]
+NP[NUM=sg, GEND=?g] -> ProfRef[NUM=sg, GEND=?g]
+
+# VP expansion productions
+VP[TENSE=?t, NUM=?n] -> IV[TENSE=?t, NUM=?n]
+VP[TENSE=?t, NUM=?n, GEND=?g] -> TV[TENSE=?t, NUM=?n] NP[GEND=?g]
+VP[TENSE=?t, NUM=?n] -> BV[TENSE=?t, NUM=?n] ADJ
+VP[TENSE=?t, NUM=?n] -> CV[TENSE=?t, NUM=?n] COMP CS
+VP[TENSE=?t, NUM=?n] -> CV[TENSE=?t, NUM=?n] CS
+VP[TENSE=?t, NUM=?n] -> IV[TENSE=?t, NUM=?n] PP1
+VP[TENSE=?t, NUM=?n] -> IV[TENSE=?t, NUM=?n] PP2
+VP[TENSE=?t, NUM=?n] -> TV[TENSE=?t, NUM=?n] NP PP2
+VP[TENSE=?t, NUM=?n] -> DV[TENSE=?t, NUM=?n] NP PP1
+
+# PP expansion productions
+PP1 -> PREP1 NP
+PP1 -> PREP2 NP
+PP2 -> PREP2 NDay
+
+# ###################
+# Lexical Productions
+# ###################
+
+Det[NUM=sg] -> 'that'
+Det[NUM=pl] -> 'five'
+Det -> 'the'
+
+PropN[NUM=sg, GEND=f]-> 'Mary'
+PropN[NUM=sg, GEND=m]-> 'John'
+
+ProfRef[NUM=sg, GEND=f] -> 'herself'
+ProfRef[NUM=sg, GEND=m] -> 'himself'
+
+N[NUM=sg] -> 'dog' | 'book' | 'shelf' | 'summit'
+N[NUM=pl] -> 'dogs' | 'cats' | 'minutes'
+NDay -> 'Tuesday'
+
+IV[TENSE=pres,  NUM=sg] -> 'barks' | 'knows'
+IV[TENSE=pres,  NUM=pl] -> 'bark' | 'know'
+IV[TENSE=past] -> 'walked'
+
+TV[TENSE=past] -> 'saw' | 'reached'
+DV[TENSE=past] -> 'put'
+DV[TENSE=pres, NUM=pl] -> 'put'
+
+CV[TENSE=past] -> 'thought'
+CV[TENSE=pres, NUM=pl] -> 'think'
+
+ZV[TENSE=pres, NUM=sg] -> 'does'
+ZV[TENSE=past] -> 'did'
+
+BV[TENSE=past, NUM=sg] -> 'was'
+
+QUES -> 'what'
+
+ADJ -> 'interesting'
+PREP1 -> 'for'
+PREP2 -> 'on'
+
+COMP -> 'that'
+PUNC -> '.' | '?'
